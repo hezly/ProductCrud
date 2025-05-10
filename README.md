@@ -13,7 +13,7 @@ ProductCrud is a web application for managing product inventory through basic CR
 ## Technologies Used
 - ASP.NET Core API
 - Entity Framework Core
-- SQL Server
+- PostgreSQL
 - Docker & Docker Compose
 - Blazor WebAssembly/Server for the web client
 
