@@ -26,7 +26,7 @@ ProductCrud is a web application for managing product inventory through basic CR
 
 ### Installation and Setup
 
-#### Backend API
+#### Backend API (ProductCrud.Api)
 1. Clone the repository
    ```
    git clone https://github.com/yourusername/ProductCrud.git
@@ -43,7 +43,7 @@ ProductCrud is a web application for managing product inventory through basic CR
 
 4. The API will be available at `http://localhost:6000/api`
 
-#### Blazor Web Client
+#### Blazor Web Client (ProductCrud.Web)
 The Blazor web client needs to be run separately:
 
 1. Navigate to the Blazor client directory
