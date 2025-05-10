@@ -1,0 +1,27 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Product CRUD Application</h1>
+
+<p>Welcome to the Product CRUD application. This demo showcases:</p>
+
+<ul>
+    <li>Blazor UI with .NET 9</li>
+    <li>API integration</li>
+    <li>Authentication and authorization</li>
+    <li>CRUD operations for products</li>
+</ul>
+
+<AuthorizeView>
+    <Authorized>
+        <p>
+            You are logged in. Go to the <a href="products">Products</a> page to manage products.
+        </p>
+    </Authorized>
+    <NotAuthorized>
+        <p>
+            Please <a href="login">log in</a> to manage products.
+        </p>
+    </NotAuthorized>
+</AuthorizeView>

@@ -1,0 +1,12 @@
+services:
+  productdb:
+    image: postgres
+
+  productcrud.api:
+    image: ${DOCKER_REGISTRY-}productcrudapi
+    build:
+      context: .
+      dockerfile: ProductCrud.Api/Dockerfile
+
+volumes:
+  postgres_product:
