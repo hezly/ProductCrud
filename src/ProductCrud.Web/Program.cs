@@ -33,7 +33,7 @@ builder.Services.AddHttpClient("auth", client =>
 builder.Services.AddHttpClient("ApiClient", client =>
 {
     var baseUrl = builder.Configuration["ApiSettings:BaseUrl"];
-    client.BaseAddress = new Uri(builder.Configuration["BaseUrl"]);
+    client.BaseAddress = new Uri(builder.Configuration["BaseUrl"] ?? "https://localhost:7029/");
 });
 builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("ApiClient"));
 
